@@ -19,7 +19,7 @@ title = "Bean's blog"
 theme = "tranquilpeak"
 disqusShortname = "tranquilpeak"
 publishdir = "tubean.github.io"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-128433621-1"
 paginate = 7
 canonifyurls = true
 
