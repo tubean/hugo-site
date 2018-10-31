@@ -1,2 +1,2 @@
-# hugo-site
-Hugo-site
+# tubean.github.io
+Tu Bean's Blog
