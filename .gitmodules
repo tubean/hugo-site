@@ -1,6 +1,4 @@
-[submodule "tubean.github.io"]
-	path = tubean.github.io
-	url = git@github.com:tubean/tubean.github.io.git
+
 [submodule "themes/tranquilpeak"]
 	path = themes/tranquilpeak
 	url = git@github.com:kakawait/hugo-tranquilpeak-theme.git
