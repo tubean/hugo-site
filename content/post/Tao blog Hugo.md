@@ -52,7 +52,7 @@ Các bạn nhớ chọn xong thì xem hướng dẫn sử dụng để biết th
 # 5. Cài đặt Hugo
 
 Như trên [trang chủ](https://gohugo.io/getting-started/quick-start/) của Hugo cũng đã hướng dẫn chi tiết cách cài đặt, tuy nhiên nếu chẳng may gặp vấn đề do version thì chúng ta sẽ không biết cài bản thấp hơn như thế nào đúng không? Vì thế mình khuyên các bạn nên đọc version mà theme support để cài, sau đó thì vào [đây](https://github.com/gohugoio/hugo/releases/) để tìm phiên bản phù hợp.
- Chú ý cài trên window thì dùng bản có đuôi mở rộng `.tar.gz`, còn linux và mac thì dùng bản `.deb` .
+ Chú ý chọn đúng gói dành cho hệ điều hành bạn đang sử dụng
 # 6. Tạo blog cùng chị Hugo Nina
 Bật powershell hoặc terminal và trỏ đến folder repo lớn, sau đó gõ lệnh sau:
 ```
