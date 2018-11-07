@@ -24,7 +24,7 @@ coverImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1541273502/Black_
 metaAlignment: center
 ---
 # 1. Lambda expresstion là gì?
-`Lambda expression` là một feature mới và nổi bật nhất của java 8 giúp số lượng code được giảm và là bước đầu khiến Java bước vào thế giới `functional programming`. Một lamba expression là một function được tạo mà không thuộc bất kì một class nào. Nó là một hàm không tên (unamed function) với các tham số (parameters) và phần body chứa khối lệnh được tách biệt với các tham số bằng dấu `->`. Ví du:
+`Lambda expression` là một feature mới và nổi bật nhất của java 8 giúp số lượng code được giảm và là bước đầu khiến Java bước vào thế giới `functional programming`. Một lamba expression là một function được tạo mà không thuộc bất kì một class nào. Nó là một hàm không tên (unamed function) với các tham số (parameters) và phần body chứa khối lệnh được tách biệt với các tham số bằng dấu `->`. Ví dụ:
 
 ```
 
@@ -49,29 +49,64 @@ Lambda expression thường được sử dụng để implement những `event 
 
 # 2. Functional interface là gì?
 Một interface chỉ chứa duy nhất một method trừu tượng được gọi là `function interface`. Nó cũng có thể được gọi là `Single Abstract Interface`(SAM). Functional interface sử dụng annotation `@FunctionalInterface` để khai báo. Tuy nhiên việc này là không bắt buộc, nó chỉ đảm bảo cho quá trình complile, giúp chương trình báo lỗi khi có từ 2 method trừu tượng trở lên.
-Mục đích của functional interface chính là chúng ta có thể dùng lambda expression để tạo ra một instance cho interface đó.
-Ví dụ:
+
+Để sử dụng biểu thức Lambda thì đầu tiên cần phải có một _functional interface_ chứa một phương thức cần overide lại trong biểu thức lambda. Ví dụ interface `Runnable` là một _functional interface_:
+
 ```java
 
-	public class Main {
-		public static void main(String[] argv) {
-			Processor stringProcessor = (String str) -> str.length();
-			String name = "Java Lambda";
-			int length = stringProcessor.getStringLength(name);
-			System.out.println(length);
-		}
-	}
-
 	@FunctionalInterface
-	interface Processor {
-		int getStringLength(String str);
+	public interface Runnable {
+		public abstract void run();
 	}
 
 ```
-Để tạo được một lambda đúng chuẩn với một functional interface thì các parameter và kiểu trả về của lamda express phải giống với abtract method.
+
+Trước java 8 thì có vài cách để implement method trong một interface:
+
+-	Cách 1: Tạo một class mới:
+
+```java
+
+	public class MyRunnable implements Runnable {
+		@Override
+		public void run() {
+			System.out.println("I have implemented Runnable!");
+		}
+
+		public static void main(String args[]) {
+			MyRunnable runnable = new MyRunnable();
+			runnable.run();
+		}
+	}
+
+```
+
+- Cách 2: Tạo một class Annonymous:
+
+```java
+
+	Runnable runnable = new Runnable() {
+		@Override
+		public void run() {
+			System.out.println("I have implemented Runnable!");
+		}
+	};
+	runnable.run();
+
+```
+
+Còn nếu chúng ta sử dụng biểu thức lambda thì chỉ cần code đơn giản như sau:
+
+```java
+
+	Runnable runnable = () -> System.out.println("I have implemented Runnable!");
+	runnable.run();
+
+```
+
 # 3. Funtional Interface API trong Java 8
 Java 8 xây dựng sẵn một số functional interface được sử dụng trong các biểu thức lambda:
-## 3.1 java.util.function.Consumer
+#### 3.1 java.util.function.Consumer
 ```java
 
 	package java.util.function;
@@ -108,7 +143,7 @@ Ví dụ đoạn code sau in ra tất cả các giá trị của 1 list:
 
 ```
 
-## 3.2 java.util.function.Predicate
+#### 3.2 java.util.function.Predicate
 
 ```java
 
@@ -151,7 +186,7 @@ Ví dụ:
 
 ```
 
-## 3.3 java.util.function.Function
+#### 3.3 java.util.function.Function
 ```java
 
 	package java.util.function;
@@ -197,7 +232,7 @@ Một số Function interface tương tự:
 -   java.util.function.DoubleFunction<R>: dữ liệu chuyển về kiểu Double
 -   java.util.function.LongFunction<R>: dữ liệu chuyển về kiểu Long
 
-## 3.4 java.util.function.Supplier
+#### 3.4 java.util.function.Supplier
 ```java
 
 	package java.util.function;
