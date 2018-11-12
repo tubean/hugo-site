@@ -17,7 +17,7 @@ keywords:
 - Collection
 autoThumbnailImage: true
 thumbnailImagePosition: "left"
-thumbnailImage: https://imgur.com/eer0Pfq
+thumbnailImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1541576734/eer0Pfq.png
 coverImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1541273502/Black_flag.svg.png
 metaAlignment: center
 ---
@@ -221,6 +221,28 @@ List<String> list = people.stream()
 Map<Integer, List<Person>> map = people.stream()
 	.filter(p -> p.getAge() > 20)
 	.collect(Collectors.groupingBy(Person::getAge));
+```
+
+# 6. Mapping
+
+Stream API cung cấp method map(), flatMap() thể thực hiện việc bước mapping, method này trả về một stream, vì thế nó chính là một intermediary operation.
+
+Ngoài ra cũng như forEach() sử dụng Consumer hay filter() sử dụng Predicate, map() hay flatMap() sử dụng một thứ gọi là Function để quy định việc mapping, và Function cũng là một Functional Inteface.
+
+```java
+<R> Stream<R> flatMap(Function<T, Stream<R>> flatMapper);
+
+<R> Stream<R> map(Function<T, R> mapper);
+```
+
+Cách dùng:
+
+```java
+Stream<String> names = Stream.of("tu", "bean", "tubean.github.io");
+System.out.println(names.map(s -> {
+    return s.toUpperCase();
+  }).collect(Collectors.toList()));
+//prints [TU, BEAN, TUBEAN.GITHUB.IO]
 ```
 
 - Tham khảo:
