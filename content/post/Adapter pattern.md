@@ -1,6 +1,6 @@
 ﻿
 ---
-title: "[Design Patterns] Adapter Design Pattern"
+title: "[Design Patterns] Adapter Design Pattern in Java"
 slug: adapter-design-patterns
 date: 2018-11-25
 categories:
