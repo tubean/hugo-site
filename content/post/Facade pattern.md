@@ -91,7 +91,7 @@ class ScheduleServerFacade {
     }  
 }
 ```
-Khi này thì khách hàng muốn start hay stop server thì chỉ cần gọi đến 2 phương thức `startServer()` và `stopServer()`, quá tiện ::smile::
+Khi này thì khách hàng muốn _start_ hay _stop_ server thì chỉ cần gọi đến 2 phương thức `startServer()` và `stopServer()`, quá tiện ::smile::
 
 # 4. Dùng Facade khi nào?
 Chúng ta sẽ sử dụng Facade trong các trường hợp sau:
