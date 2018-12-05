@@ -105,7 +105,7 @@ enableEmoji = true
   identifier = "Github"
   name = "Github"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://ask.fm/zeref_bean"
+  url = "https://github.com/tubean"
 
 [params]
   # Customize date format use to render blog post date, categories and other
