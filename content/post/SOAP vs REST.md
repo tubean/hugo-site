@@ -16,7 +16,7 @@ keywords:
 - restful
 autoThumbnailImage: true
 thumbnailImagePosition: "left"
-thumbnailImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1541576734/eer0Pfq.png
+thumbnailImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1544948787/web-service-drawing_csp11664505.jpg
 coverImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1541273502/Black_flag.svg.png
 metaAlignment: center
 ---
