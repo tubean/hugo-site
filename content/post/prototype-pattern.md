@@ -1,5 +1,5 @@
 ﻿---
-title: "[Design Pattern] Protorype Design Pattern"
+title: "[Design Pattern] Prototype Design Pattern"
 slug: prototype-pattern
 date: 2018-12-15
 categories:
