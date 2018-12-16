@@ -3,7 +3,7 @@ title: "[Web Service] Sự khác nhau giữa SOAP và RESTful Web Service trong 
 date: 2018-12-13
 categories:
 - Java
-- Web service
+- Web Service
 tags:
 - Java
 - web service

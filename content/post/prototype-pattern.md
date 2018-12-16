@@ -3,7 +3,8 @@ title: "[Design Pattern] Prototype Design Pattern"
 slug: prototype-pattern
 date: 2018-12-15
 categories:
-- design pattern
+- Java
+- Design Patterns
 tags:
 - design pattern
 - prototype

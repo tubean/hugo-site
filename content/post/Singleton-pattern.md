@@ -3,7 +3,8 @@ title: "[Design Pattern] Singleton Design Pattern"
 slug: singleton-pattern
 date: 2018-12-09
 categories:
-- design pattern
+- Java
+- Design Patterns
 tags:
 - design pattern
 - singleton
@@ -54,7 +55,7 @@ public class SingletonEager {
 Nhược điểm của cách làm này chính là instance static luôn được tạo bất kể bạn có dùng nó hay không. Vì vậy nếu trong trường hợp không có request đến thì nó sẽ làm lãng phí tài nguyên bộ nhớ. Để khắc phục thì chúng ta sẽ chỉ tạo instace trong lần request đầu tiên và những lần sau sẽ trả về đúng instance đó:
 ```java
 public class SingletonLazy {  
-  
+
     private static SingletonLazy sc = null;  
    private SingletonLazy(){}  
    public static SingletonLazy getInstance(){  
@@ -68,9 +69,9 @@ public class SingletonLazy {
 Với cách trên thì khi chưa có request nào dùng đến method `getInstance()` thì sc luôn là null. Nó chỉ được tạo trong lần đầu request và những lần gọi sau luôn trả về cùng instance trước đó. Tuy vậy java là ngôn ngữ cho phép xử lý đa luồng. Điều đó có nghĩa là nếu cùng lúc có 2 request đến thì sẽ có thể xảy ra trường hợp tạo ra 2 instance. Để tránh điều này thì chúng ta sẽ sử dụng từ khóa `synchronized` cho method `getInstance()`:
 ```java
 public class SingletonLazyMultithreaded {  
-  
+
    private static SingletonLazyMultithreaded sc = null;  
-  
+
     private SingletonLazyMultithreaded(){}  
    public static synchronized SingletonLazyMultithreaded getInstance(){  
       if(sc==null){  
@@ -80,14 +81,14 @@ public class SingletonLazyMultithreaded {
    }  
 }
 ```
-Bằng cách này thì với với multi-thread, các thread phải lần lượt truy cập, thread này phải chờ thread kia kết thúc truy cập thì mới được vào. Bởi vậy nên sẽ không có trường hợp cả 2 cùng có điều kiện sc là null và tạo ra 2 instance mới. Tuy nhiên thì dùng từ khóa `synchronized` không phải là không phải trả giá, bởi nó sẽ làm cho performance của chương trình bị giảm. Bởi vậy nếu trong điều kiện chương trình của bạn không cần quan tâm đến multi-thread hoặc nó đã được handle ở client thì có thể không cần dùng đến từ khóa này. 
+Bằng cách này thì với với multi-thread, các thread phải lần lượt truy cập, thread này phải chờ thread kia kết thúc truy cập thì mới được vào. Bởi vậy nên sẽ không có trường hợp cả 2 cùng có điều kiện sc là null và tạo ra 2 instance mới. Tuy nhiên thì dùng từ khóa `synchronized` không phải là không phải trả giá, bởi nó sẽ làm cho performance của chương trình bị giảm. Bởi vậy nếu trong điều kiện chương trình của bạn không cần quan tâm đến multi-thread hoặc nó đã được handle ở client thì có thể không cần dùng đến từ khóa này.
 
 Nhưng nếu bạn vẫn muốn sử dụng từ khóa `synchronized` thì bạn nên sử dụng nó theo một best practice là `double-checked-locking`:
 ```java
 public class SingletonLazyDoubleCheck {  
-  
+
    private volatile static SingletonLazyDoubleCheck sc = null;  
-  
+
     private SingletonLazyDoubleCheck(){}  
    public static SingletonLazyDoubleCheck getInstance(){  
       if(sc==null){  
@@ -114,7 +115,7 @@ Ví dụ dưới đây sẽ đảm bảo hơn cho một class chỉ có duy nh�
 
 ```java
 public class Singleton implements Serializable {  
-  
+
     private static final long serialVersionUID = -1093810940935189395L;  
     private static Singleton sc = new Singleton();  
     private Singleton(){  
@@ -125,26 +126,26 @@ public class Singleton implements Serializable {
     public static Singleton getInstance(){  
         return sc;  
     }  
-  
+
     private Object readResolve() throws ObjectStreamException {  
         return sc;  
     }  
-  
+
     private Object writeReplace() throws ObjectStreamException{  
         return sc;  
     }  
-  
+
     public Object clone() throws CloneNotSupportedException{  
         throw new CloneNotSupportedException("Singleton, cannot be clonned");  
     }  
-  
+
     private static Class getClass(String classname) throws ClassNotFoundException {  
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();  
         if(classLoader == null)  
             classLoader = Singleton.class.getClassLoader();  
         return (classLoader.loadClass(classname));  
     }  
-  
+
 }
 ```
 Trong ví dụ trên thì:
@@ -160,7 +161,7 @@ Các giải pháp trên đều có thể sử dụng tùy từng trường hợp
 
 ```java
 public class SingletoneEnum {  
-  
+
    public enum SingleEnum{  
         SINGLETON_ENUM;  
    }  

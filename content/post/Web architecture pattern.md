@@ -3,7 +3,7 @@ title: "[Web architecture] Kiến trúc monolithic và microservice"
 slug: monolithic-vs-microservice
 date: 2018-12-16
 categories:
-- web architecture
+- Web Architecture
 tags:
 - web architecture
 - monolithic
@@ -122,8 +122,8 @@ Chúng ta thường sử dụng kiến trúc một khối khi:
 ## 3.2 Kiến trúc microservice
 Chúng ta thường sử dụng kiến trúc microservice khi:
 
-- Ứng dụng có phạm vi lớn và bạn xác định các tính năng sẽ được phát triển rất mạnh theo thời gian. Ví du: cửa hàng thương mại điện tử trực tuyến, dịch vụ truyền thông xã hội, dịch vụ truyền phát video với số lượng người dùng lơn, dịch vụ cung cấp API,...
-- Team-size lơn, có đủ thành viên để phát triển các component riêng lẻ một cách hiệu quả.
+- Ứng dụng có phạm vi lớn và bạn xác định các tính năng sẽ được phát triển rất mạnh theo thời gian. Ví dụ: cửa hàng thương mại điện tử trực tuyến, dịch vụ truyền thông xã hội, dịch vụ truyền phát video với số lượng người dùng lơn, dịch vụ cung cấp API,...
+- Team-size lớn, có đủ thành viên để phát triển các component riêng lẻ một cách hiệu quả.
 - Mặt bằng kỹ năng của team tốt và các thành viên tự tin về các mẫu thiết kế microservice nâng cao.
 - Thời gian để đem đi marketing không quan trọng. Kiến trúc microservice sẽ mất nhiều thời gian hơn để hoạt động được.
 - Bạn sẵn sàng chi nhiều hơn cho cơ sở hạ tầng, giám sát,... để nâng cao chất lượng sản phẩm.

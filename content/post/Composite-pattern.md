@@ -3,7 +3,8 @@ title: "[Design Pattern] Composite Design Pattern"
 slug: composite-pattern
 date: 2018-12-05
 categories:
-- design pattern
+- Java
+- Design Patterns
 tags:
 - design pattern
 - composite
