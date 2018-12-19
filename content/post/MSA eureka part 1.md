@@ -535,6 +535,8 @@ Tiếp theo chúng ta gọi đến service Image thông qua Gallery bằng đư�
 
 Kết thúc phần đầu tiên ở đây, ở phần tiếp theo chúng ta sẽ tìm hiểu cách để xác thực user bằng JWT.
 
+https://tubean.github.io/2018/12/microservice-springboot-eureka-part2/
+
 # Nguồn bài viết
 https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-intro-to-microservices-part-1-c0d24cd422c3
 
