@@ -11,7 +11,7 @@ tags:
 - eureka
 - zuul
 - microservice
-- jwt
+- hystrix
 keywords:
 - web architecture
 - spring boot
@@ -20,7 +20,10 @@ keywords:
 - microservice
 - tutorial
 - intelij
-- jwt
+- hystrix
+- circuit breaker
+- log tracing
+- sleuth
 autoThumbnailImage: true
 thumbnailImagePosition: "left"
 thumbnailImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1545140745/1_aVq0q9jjFx1R8DMVhKKFWQ.png
