@@ -603,7 +603,7 @@ Chúng ta sẽ chạy lần lượt Eureka Server, các service image, gallery, 
 
 Bây giờ gọi lại đến gallery service kèm theo một token trong header:
 ![img_2](https://res.cloudinary.com/deop9ytsv/image/upload/v1545237474/Screenshot_2.jpg)
-Ngoài ta thì bạn có thể thử chạy nhiều instance của gallery service để test xem các request được phân tán như thế nào. Trong phần tiếp theo, chúng ta sẽ tìm hiểu các xử lý lỗi và theo dõi trong mô hình microservice.
+Ngoài ta thì bạn có thể thử chạy nhiều instance của gallery service để test xem các request được phân tán như thế nào. Trong [phần tiếp theo](https://tubean.github.io/2018/12/microservice-springboot-eureka-part3/), chúng ta sẽ tìm hiểu các xử lý lỗi và theo dõi trong mô hình microservice.
 
 
 # Nguồn bài viết
