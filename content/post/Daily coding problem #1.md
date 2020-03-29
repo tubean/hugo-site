@@ -1,8 +1,7 @@
-
 ﻿---
-title: "[Daily Coding Problem] Code dạo mỗi ngày #1"
+title: "[Daily Coding Problem] #1"
 slug: daily-code-1
-date: 2020-03-29
+date: 2020-03-28
 categories:
 - Daily Code Problems
 - Java
@@ -21,12 +20,16 @@ keywords:
 - intelij
 autoThumbnailImage: true
 thumbnailImagePosition: "left"
-thumbnailImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1585475653/daily-code.png(https://res.cloudinary.com/deop9ytsv/image/upload/v1585475653/daily-code.png)
+thumbnailImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1585475653/daily-code.png
 coverImage: https://res.cloudinary.com/deop9ytsv/image/upload/v1541273502/Black_flag.svg.png
 metaAlignment: center
 ---
-Chào các bạn. Nhân dịp rảnh rỗi do dịch COVID-19, tôi quyết định đào mộ lại cái blog này sau một năm bận các công việc cá nhân.
+Chào các bạn.
+
+Nhân dịp rảnh rỗi do dịch COVID-19, tôi quyết định đào mộ lại cái blog này sau một năm bận các công việc cá nhân.
+
 Như tiêu đề thì series này sẽ tổng hợp một số câu hỏi phỏng vấn về thuật toán kinh điển trong các công ty cũng như cách giải quyết vấn đề cho mỗi câu hỏi. Mọi bài toán đều có cách giải riêng cho nó. Vì vậy tôi rất hoan nghênh sự đóng góp của các bạn trong việc phân tích và đưa ra những lời giải độc đáo cho mỗi vấn đề.
+
 Khởi đầu chúng ta sẽ cùng xem xét một câu hỏi tương đối dễ thường được hỏi bởi Google:
 # Problem
 ```
