@@ -81,20 +81,6 @@ enableEmoji = true
 
 [[menu.links]]
   weight = 1
-  identifier = "Bitbucket"
-  name = "Bitbucket"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bitbucket-square\"></i>"
-  url = "https://bitbucket.org/tubean/"
-
-[[menu.links]]
-  weight = 1
-  identifier = "Instagram"
-  name = "Instagram"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-instagram\"></i>"
-  url = "https://www.instagram.com/zeref_bean/"
-
-[[menu.links]]
-  weight = 1
   identifier = "LinkedIn"
   name = "LinkedIn"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
