@@ -59,5 +59,5 @@ public class Main {
 # Source code
 https://github.com/tubean/dailycode/tree/master/src/day9
 
-#Reference
+# Reference
 https://codereview.stackexchange.com/questions/214538/implement-a-job-scheduler-which-takes-in-a-function-f-and-an-integer-n-and-call
